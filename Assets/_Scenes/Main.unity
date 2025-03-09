@@ -586,7 +586,7 @@ GameObject:
   - component: {fileID: 275583748}
   - component: {fileID: 275583747}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: PlayText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1757,7 +1757,7 @@ GameObject:
   - component: {fileID: 706716655}
   - component: {fileID: 706716654}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ExitText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2416,7 +2416,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 882358787}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1623929140}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &882358787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2903,7 +2915,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1195037222}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1623929140}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: DisableSettingsMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1195037222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3770,6 +3794,9 @@ MonoBehaviour:
   OnDash:
     m_PersistentCalls:
       m_Calls: []
+  OnSettingsMenu:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1623929140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3784,6 +3811,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   coinCounter: {fileID: 1165002142}
+  inputManager: {fileID: 1623929139}
+  settingsMenu: {fileID: 291604073}
 --- !u!1 &1674819563
 GameObject:
   m_ObjectHideFlags: 0
@@ -4363,7 +4392,7 @@ GameObject:
   - component: {fileID: 1910825216}
   - component: {fileID: 1910825215}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: PlayerSpeedText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5063,7 +5092,19 @@ MonoBehaviour:
   m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 511674247}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: UpdatePlayerMaxSpeed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2015277479
 MonoBehaviour:
   m_ObjectHideFlags: 0
